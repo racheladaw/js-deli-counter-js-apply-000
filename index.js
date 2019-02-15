@@ -2,6 +2,17 @@ function takeANumber(line, name) {
   line.push(name);
   return 'Welcome, ' + name + '. You are number ' + line.length + ' in line.';
 }
+var num = 0;
+
+function takeANumberAlt(line) {
+  num++;
+  line.push(num);
+  return num;
+}
+
+function resetCounter() {
+  num = 0;
+}
 
 function nowServing(line) {
   if (line.length > 0) {
